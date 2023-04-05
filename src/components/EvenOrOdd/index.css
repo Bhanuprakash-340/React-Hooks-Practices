@@ -1,0 +1,33 @@
+.even-odd-main-container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #ff6e7f,#bfe9ff);
+}
+
+.even-or-odd-count-display{
+    font-weight: 600;
+    color:  #0f172a;
+}
+
+.even-or-odd-text-display{
+    font-weight: 600;
+    color: #334155;
+}
+
+.random-inc-button{
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #0f172a;
+    border: 2px solid #0f172a;
+    border-radius: 3px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.even-odd-info-text{
+    font-weight: 600;
+    color: #334155;
+}

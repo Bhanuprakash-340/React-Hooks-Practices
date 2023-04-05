@@ -1,0 +1,69 @@
+.fruits-main-container{
+    background-color: #ffd569;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.fruits-container{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 90%;
+    padding: 50px;
+    padding-bottom: 50px;
+}
+
+.fruit-images{
+    height: 250px;
+    width: 250px;
+}
+
+.fruit-button{
+    height: 40px;
+    width: 120px;
+    border: none;
+    background-color: aquamarine;
+    color: black;
+    font-weight: 600;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.fruit-button:hover {
+    color: black;
+    border: 2px solid #000000;
+    box-shadow: 0 0 5px aquamarine,
+        0 0 25px aquamarine,
+        0 0 50px aquamarine,
+        0 0 100px aquamarine;
+}
+
+.fruit-and-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fruits-images-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fruit-count{
+    color: cyan;
+}
+
+.fruits-count-text{
+    font-size: 25px;
+}

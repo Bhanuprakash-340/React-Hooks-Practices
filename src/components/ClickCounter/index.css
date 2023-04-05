@@ -1,0 +1,31 @@
+.click-counter-main-container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f5f8;
+}
+
+.click-counter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.count{
+    color: #c20a72;
+    font-weight: 600;
+}
+
+.click-count-button{
+    height: 35px;
+    width: 120px;
+    padding: 5px;
+    font-weight: 600;
+    border-radius: 3px;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    cursor: pointer;
+}

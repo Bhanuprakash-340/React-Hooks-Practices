@@ -1,0 +1,61 @@
+.speedo-meter-main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #07080c;
+    padding-bottom: 50px;
+}
+
+.speed-meter-container{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.speed-head{
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.speed-meter-image{
+    width: 80%;
+}
+
+.speed-display{
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.speed-info{
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.acc-button{
+    color: #ffffff;
+    background-color: #0b69ff;
+    border: 2px solid #ffffff;
+    border-radius: 3px;
+    font-weight: 600;
+    padding: 10px 20px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.brakes-button{
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    border-radius: 3px;
+    font-weight: 600;
+    padding: 10px 20px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.speed-count{
+    color: aquamarine;
+}

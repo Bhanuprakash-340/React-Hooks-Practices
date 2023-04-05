@@ -1,0 +1,72 @@
+.google-app-container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.google-image-container{
+    width: 25%;
+    margin: 20px;
+}
+
+.google-image{
+    width: 100%;
+}
+
+.google-input-suggestions-container{
+    width: 30%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.google-search-icon{
+    height: 25px;
+}
+
+.google-search-bar{
+    height: 40px;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    font-weight: 600;
+    padding-left: 10px;
+    outline: none;
+}
+
+.input-search-google{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.suggestions-list-container{
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+.suggestion-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3px 0px;
+}
+
+.suggestion-copy-button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.suggestion-copy-icon{
+    height: 20px;
+}
+
+.suggestion{
+    margin: 4px 0px;
+    font-weight: 500;
+}

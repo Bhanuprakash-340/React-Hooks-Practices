@@ -1,0 +1,87 @@
+.letters-cal-app{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right,#219a6f, #93f9b9);
+    padding: 30px;
+}
+
+.letters-cal-block{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+}
+
+@media screen and (min-width:768px){
+    .letters-cal-block{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    }
+}
+
+.letters-input-block{
+    /* width: 45%; */
+    margin: 5px;
+    max-width: 350px;
+    order: 2;
+}
+
+.letters-image{
+    /* width: 45%; */
+    margin: 5px;
+    order: 1;
+}
+
+@media screen and (min-width:768px){
+    .letters-image{
+        width: 45%;
+        order: 2;
+    }
+}
+
+.letters-img{
+    width: 80%;
+}
+
+.cal-head{
+    color:#ffffff ;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.cal-label{
+    color:#ffffff ;
+    font-weight: 600;
+}
+
+.cal-letter-input-bar{
+    height: 30px;
+    width: 250px;
+    border-radius: 3px;
+    padding-left: 5px;
+    font-weight: 600;
+    margin: 4px 0px;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    outline: none;
+}
+
+.let-count{
+    height: 40px;
+    width: 200px;
+    background-color: #ffffff;
+    color: #219a6f;
+    font-weight: 700;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+}

@@ -1,0 +1,91 @@
+.destination-search-app-container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.destination-text{
+    color: #252627;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.search-bar{
+    height: 35px;
+    width: 250px;
+    border-radius: 3px;
+    border-right: none;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    outline: none;
+    padding-left: 10px;
+}
+
+.search-button{
+    height: 35px;
+    width: 40px;
+    border-left: 0px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.search-bar-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.destinations-container{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.places-container{
+    width: 100%;
+    list-style-type: none;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@media screen and (min-width:768px){
+    .places-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+.each-destination-li{
+    padding: 5px;
+    margin: 5px;
+    width: 80%;
+
+}
+
+@media  screen and (min-width:768px) {
+    .each-destination-li{
+        width: 45%;
+    }
+}
+
+.image-name-container{
+    margin: 3px;
+}
+
+.destination-image{
+    width: 100%;
+}
+
+.destination-name{
+    font-weight: 700;
+    color:  #000000;
+}

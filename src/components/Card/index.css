@@ -1,0 +1,37 @@
+.tech-card{
+    border: 1px solid #64748b;
+    margin: 10px;
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 20px;
+    width: 75%;
+}
+
+@media screen and (min-width:992px){
+    .tech-card{
+        width: 45%;
+       
+    }
+}
+
+.tech-image{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.card-1-tech{
+    border-top: 6px solid aqua;
+}
+
+.card-2-tech{
+    border-top: 6px solid #00a8e7;
+}
+
+.card-3-tech{
+    border-top: 6px solid #44c4a1;
+}
+
+.card-4-tech{
+    border-top: 6px solid #ff4f64;
+}

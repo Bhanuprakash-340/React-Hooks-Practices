@@ -1,0 +1,66 @@
+.todo-main-container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffc2a0;
+    padding: 20px 0px;
+}
+
+.todo-container{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.todos-heading{
+    color: #ff8542;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.todos-list-container{
+    list-style-type: none;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.todo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: 5px;
+}
+
+.todo-text{
+    font-weight: 600;
+}
+
+.todo-delete-button{
+    font-weight: 600;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid  #ff0b37;
+    color: #ff0b37;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.todo-delete-button:hover {
+    color: #ff0b37;
+    box-shadow: 0 0 5px #ff0b37,
+        0 0 25px #ff0b37,
+        0 0 50px #ff0b37,
+        0 0 100px #ff0b37;
+}

@@ -1,0 +1,37 @@
+.technology-cards-container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.tech-heading{
+    text-align: center;
+}
+
+.tech-para{
+    width: 450px;
+    text-align: center;
+    margin: 5px;
+}
+
+.tech-items-container{
+    list-style-type: none;
+    width: 90%;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@media screen and (min-width:992px){
+    .tech-items-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}

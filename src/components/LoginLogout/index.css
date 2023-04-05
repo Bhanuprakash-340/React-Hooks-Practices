@@ -1,0 +1,27 @@
+.login-logout-app-container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom,#2b2c49,#b5b9ff);
+   
+}
+
+.login-message{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 28px;
+    margin: 20px;
+}
+
+.login-logout-button{
+    font-weight: 600;
+    color: #2b2c49;
+    background-color: #ffffff;
+    border: 2px solid #2b2c49;
+    border-radius: 3px;
+    padding: 10px 15px;
+    width: 140px;
+    cursor: pointer;
+}

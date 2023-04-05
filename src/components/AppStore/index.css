@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700');
+.app-store-main-container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #fff1eb,#ace0f9);
+}
+
+.app-store-heading{
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.app-store-search-bar-container{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-icon{
+    height: 25px;
+    width: 25px;
+}
+
+.app-search-bar{
+    height: 35px;
+    width: 220px;
+    border-right: 0px;
+    outline: none;
+    padding-left: 5px;
+    font-weight: 500;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.search-icon-button{
+    background-color: #ffffff;
+    border-left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 35px;
+    padding: 5px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.app-tabs-container{
+    list-style-type: none;
+    padding: 0px;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px 0px;
+}
+
+.app-tab-list-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.tick{
+    border-bottom: 3px solid  #2563eb;
+}
+
+.app-tab-button{
+    height: 30px;
+    width: 100px;
+    font-weight: 600;
+    color:  #7b8794;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.apps-container{
+    /* border: 2px solid red; */
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.app-list-container{
+    /* border: 2px solid green; */
+    width: 100%;
+    list-style-type: none;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width:768px){
+    .app-list-container{
+        width: 80%;
+    }
+}
+
+.app-card{
+    background-color: #ffffff;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+    width: 40%;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+@media screen and (min-width:768px){
+    .app-card{
+        width: 20%;
+        margin: 15px;
+    }
+}
+
+.app-logos{
+    height: 100px;
+    width: 100px;
+}

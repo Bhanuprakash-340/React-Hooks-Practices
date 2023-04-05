@@ -1,0 +1,32 @@
+.welcome-app-container{
+    background-color: #1e293b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.welcome-text{
+    font-weight: 700;
+    color: #f0bb03;
+    font-size: 60px;
+}
+
+.welcome-text-2{
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.subscribe-button{
+    font-weight: 600;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 15px 20px;
+    height: 40px;
+    width: 130px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}

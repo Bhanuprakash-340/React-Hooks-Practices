@@ -1,0 +1,46 @@
+.head-tail-app-container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right,#f9d423,#e2a139);
+    padding: 30px;
+}
+
+.head-tail-block{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.toss-image{
+    height: 120px;
+    width: 120px;
+}
+
+.toss-count{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-size: 16px;
+    width: 60%;
+    color:  #334155;
+    
+}
+
+.toss-button{
+    height: 35px;
+    width: 120px;
+    border-radius: 4px;
+    font-weight: 500;
+    background-color: #f9d423;
+    color:#a35200;
+    cursor: pointer;
+}
