@@ -2,16 +2,10 @@ import React, { useState } from 'react'
 import {v4} from 'uuid'
 import './index.css'
 
-// const unLikedImage = "https://assets.ccbp.in/frontend/react-js/comments-app/like-img.png"
-// const likedImage = "https://assets.ccbp.in/frontend/react-js/comments-app/liked-img.png"
 
 const CommentsApp = () => {
     const [formData,setFormData] = useState({commenterName:'',comment:''})
-    // const [liked,setLiked] = useState(false)
     const [commentsData,setCommentsData] = useState([])
-
-    // const isLiked = liked === true ?   "https://assets.ccbp.in/frontend/react-js/comments-app/liked-img.png" : "https://assets.ccbp.in/frontend/react-js/comments-app/like-img.png"
-
 
     const getFormData = (event) =>{
         event.preventDefault()
@@ -35,42 +29,17 @@ const CommentsApp = () => {
     //    console.log(filteredArray)
     }
 
-   
 
-    // const  handleLikeIcon= (id) =>{
-    //     setCommentsData(prevData =>({...prevData.map(each =>{
-    //         if (each.id === id){
-    //             return {...each,isLiked:!each.isLiked}
-    //         }
-    //         return {each}
-    //     })}))
-
-    //     console.log(commentsData)
-    // }
-
-        // const previousData = setCommentsData(...commentsData)
-        // console.log(previousData)
-    //     debugger;
-    //     setCommentsData((...prevData) =>(prevData.map(each =>{
-    //     //     console.log(prevData)
-    //     //     if (id === each.id){
-    //     //         return {...each, isLiked:!each.isLiked}
-    //     //     }
-    //     //     return setCommentsData(each)
-    //     // 
-    // }
-    //     )))
-    //    const result = [...commentsData].map(each =>{
-    //     if (each.id === id){
-    //         return {...each,isLiked:!each.isLiked}
-    //     }
-    //     return each
-    //    })
-
-    //    console.log(commentsData)
-    // const previousCommentsData = 
-    // console.log(commentsData)
+    const handleLikeIcon = (id) => {
+        setCommentsData(prevData => prevData.map(each => {
+            if (each.id === id) {
+                return { ...each, isLiked: !each.isLiked };
+            }
+            return each;
+        }));
     
+        console.log(commentsData);
+    };
 
   return (
     <div className='comments-app-main-container'>
@@ -106,7 +75,7 @@ const CommentsApp = () => {
                     </div>
                 </div>
                 <div className='like-delete-container'>
-                    <button className='like-delete-button'>
+                    <button className='like-delete-button' onClick={()=>handleLikeIcon(eachComment.id)}>
                         <img src={eachComment.isLiked === true ? "https://assets.ccbp.in/frontend/react-js/comments-app/liked-img.png":"https://assets.ccbp.in/frontend/react-js/comments-app/like-img.png"} alt="like" className='comment-icon'/>
                     </button>
                     <button className='like-delete-button'>
