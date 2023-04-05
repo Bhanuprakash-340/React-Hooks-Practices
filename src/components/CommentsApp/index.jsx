@@ -67,7 +67,7 @@ const CommentsApp = () => {
                 <li className='each-comment-item' key={eachComment.id}>
                 <div className='comment-block'>
                     <div className='profile-block'>
-                        0
+                        {eachComment.commenterName[0].toUpperCase()}
                     </div>
                     <div className='name-comment-block'>
                         <p className='commenter-text'>{eachComment.commenterName} <span className='commented-time'>Less than 2 min ago</span></p>
