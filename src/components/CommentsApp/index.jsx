@@ -86,6 +86,7 @@ const CommentsApp = () => {
                 <div className='like-delete-container'>
                     <button className='like-delete-button' onClick={()=>handleLikeIcon(eachComment.id)}>
                         <img src={eachComment.isLiked === true ? "https://assets.ccbp.in/frontend/react-js/comments-app/liked-img.png":"https://assets.ccbp.in/frontend/react-js/comments-app/like-img.png"} alt="like" className='comment-icon'/>
+                        {eachComment.isLiked === true ? (<p className='like'> Like </p>):(<p className='unlike'> UnLike </p>)}
                     </button>
                     <button className='like-delete-button'>
                         <img src="https://assets.ccbp.in/frontend/react-js/comments-app/delete-img.png" alt="delete" className='comment-icon' onClick={() =>deletedItem(eachComment.id)}/>

@@ -28,6 +28,7 @@ import { TechnologyCards } from './components/TechnologyCards'
 import ThemeChanges from './components/ThemeChanges'
 import WelcomeApp from './components/WelcomeApp'
 import CommentsApp from './components/CommentsApp'
+ import AppointmentsApp from './components/AppointmentApp'
 
 const App = () => {
   return (
@@ -60,6 +61,7 @@ const App = () => {
       <HeadsTails/>
       <Reviews/>
       <CommentsApp/>
+      <AppointmentsApp/>
     </div>
   )
 }

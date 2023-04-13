@@ -1,0 +1,117 @@
+.appointments-app-container{
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, #9796f0,#fbc7d4);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.appointment-form-container{
+    background-color: aliceblue;
+    border-radius: 10px;
+    width: 90%;
+    padding: 30px;
+    margin-top: 50px;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; */
+}
+
+.appoint-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.appointment-form{
+    border-radius: 5px;
+    width: 45%;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-start; */
+}
+
+.appointment-image{
+    border-radius: 5px;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.appoint-image{
+    width: 90%;
+}
+
+.title-text{
+    font-weight: 600;
+    font-size: 15px;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+h3{
+    margin: 0px;
+}
+
+.appointment-form input{
+    margin: 0px;
+}
+
+.appointment-cards-container{
+    border: 2px solid greenyellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.head-stared{
+    border: 2px solid green;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.appoint-cards-list{
+    border: 2px solid black;
+    list-style-type: none;
+    padding: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.each-appoint{
+    width: 30%;
+    border-radius: 10px;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 5px;
+}
+
+.each-appoint div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+.appointment-add-button{
+    border-radius: 4px;
+    padding: 10px 20px;
+    color: black;
+    background-color: aqua;
+    margin: 20px;
+    cursor: pointer;
+}
