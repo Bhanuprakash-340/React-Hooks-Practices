@@ -72,7 +72,7 @@ const CommentsApp = () => {
             {commentsData.map(eachComment =>(
                 <li className='each-comment-item' key={eachComment.id}>
                 <div className='comment-block'>
-                    <div className='profile-block'>
+                    <div className={`profile-block ${initialColors[eachComment.initialClassNameIndex]}`}>
                         {eachComment.commenterName ? eachComment.commenterName[0].toUpperCase():''}
                     </div>
                     <div className='name-comment-block'>
