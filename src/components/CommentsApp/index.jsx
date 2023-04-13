@@ -1,18 +1,27 @@
 import React, { useState } from 'react'
+import {formatDistanceToNow} from 'date-fns'
 import {v4} from 'uuid'
 import './index.css'
 
+const initialColors = [
+    'amber',
+    'blue',
+    'orange',
+    'emerald',
+    'teal',
+    'red',
+    'light-blue',
+]
 
 const CommentsApp = () => {
     const [formData,setFormData] = useState({commenterName:'',comment:''})
     const [commentsData,setCommentsData] = useState([])
-
+    
     const getFormData = (event) =>{
         event.preventDefault()
        let {comment,commenterName} = formData 
-       setCommentsData([...commentsData,{comment,commenterName,id:v4(),isLiked:false}])
+       setCommentsData([...commentsData,{comment,commenterName,id:v4(),isLiked:false,date:new Date(),initialClassNameIndex:Math.ceil(Math.random()*initialColors.length-1)}])
        setFormData({commenterName:'',comment:''})
-    //    console.log(commentsData)
     }
 
     const getCommenterName = (event) =>{
@@ -26,7 +35,6 @@ const CommentsApp = () => {
     const deletedItem = (id) =>{
        const filteredArray  = commentsData.filter(each =>each.id !== id)
        setCommentsData(filteredArray)
-    //    console.log(filteredArray)
     }
 
 
@@ -37,8 +45,6 @@ const CommentsApp = () => {
             }
             return each;
         }));
-    
-        console.log(commentsData);
     };
 
   return (
@@ -67,10 +73,13 @@ const CommentsApp = () => {
                 <li className='each-comment-item' key={eachComment.id}>
                 <div className='comment-block'>
                     <div className='profile-block'>
-                        {eachComment.commenterName[0].toUpperCase()}
+                        {eachComment.commenterName ? eachComment.commenterName[0].toUpperCase():''}
                     </div>
                     <div className='name-comment-block'>
-                        <p className='commenter-text'>{eachComment.commenterName} <span className='commented-time'>Less than 2 min ago</span></p>
+                            <p className='commenter-text'>{eachComment.commenterName} <span className='commented-time'>
+                      {formatDistanceToNow(eachComment.date)} ago
+                        </span>
+                            </p>
                         <p className='commenter-text'>{eachComment.comment}</p>
                     </div>
                 </div>
