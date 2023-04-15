@@ -22,6 +22,7 @@ const CommentsApp = () => {
        let {comment,commenterName} = formData 
        setCommentsData([...commentsData,{comment,commenterName,id:v4(),isLiked:false,date:new Date(),initialClassNameIndex:Math.ceil(Math.random()*initialColors.length-1)}])
        setFormData({commenterName:'',comment:''})
+       console.log("bhanu prakash")
     }
 
     const getCommenterName = (event) =>{

@@ -63,7 +63,7 @@ h3{
 }
 
 .appointment-cards-container{
-    border: 2px solid greenyellow;
+    /* border: 2px solid greenyellow; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -71,7 +71,7 @@ h3{
 }
 
 .head-stared{
-    border: 2px solid green;
+    /* border: 2px solid green; */
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -80,16 +80,19 @@ h3{
 }
 
 .appoint-cards-list{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     list-style-type: none;
     padding: 0px;
     width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .each-appoint{
-    width: 30%;
+    width: 32%;
     border-radius: 10px;
     border: 1px solid gray;
     display: flex;
@@ -114,4 +117,16 @@ h3{
     background-color: aqua;
     margin: 20px;
     cursor: pointer;
+}
+
+.starred-button{
+    padding: 10px 20px;
+    font-weight: 500;
+    border-radius: 3px;
+    border: 2px solid black;
+}
+
+.active{
+    background-color: #9796f0;
+    color: aliceblue;
 }
