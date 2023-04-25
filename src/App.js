@@ -30,6 +30,7 @@ import WelcomeApp from "./components/WelcomeApp";
 import CommentsApp from "./components/CommentsApp";
 import AppointmentsApp from "./components/AppointmentApp";
 import MoneyManager from "./components/MoneyManager";
+import EmojiGames from "./components/EmojiGames";
 
 const App = () => {
   return (
@@ -64,6 +65,7 @@ const App = () => {
       <CommentsApp />
       <AppointmentsApp />
       <MoneyManager />
+      <EmojiGames />
     </div>
   );
 };

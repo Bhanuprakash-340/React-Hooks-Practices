@@ -1,0 +1,73 @@
+.emoji-game-app-container{
+    min-height: 100vh;
+    background-image: linear-gradient(to left,  #9796f0,#fbc7d4);
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+.emoji-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+.emoji-score{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 10%;
+}
+
+.emoji-items-container{
+    width: 80%;
+    list-style-type: none;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.each-emoji{
+    margin: 5px;
+    width: 20%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #ffffff33;
+    cursor: pointer;
+}
+
+.emoji-button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+.emoji-score-card{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:center;
+    width: 50%;
+    background-color: #ffffff33;
+    border-radius: 10px;
+}
+
+
+.lose-game-emoji{
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+}
